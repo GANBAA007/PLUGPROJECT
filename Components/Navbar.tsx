@@ -9,14 +9,14 @@ const Navbar = () => {
     <div className="sticky mx-auto z-20 bg-white flex text-black  justify-between  text-xs font-semibold">
       <div>
             <Link href="/" className="w-60">
-            <Image src={rsz_1logoblack} alt="logo"></Image>
+            <Image src={rsz_1logoblack} alt="logo" />
             </Link>
           </div>
       <div className="flex-1 py-4 font-bold align-middle ">
 
         <ul className="flex my-1 ">
           <li>
-            <Link href="/hoodie" className="px-4 hover:font-extrabold align-middle">
+            <Link href="/Components/hoodie" passHref className="px-4 hover:font-extrabold align-middle">
               HOODDIE
             </Link>
           </li>

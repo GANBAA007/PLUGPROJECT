@@ -3,8 +3,10 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Head from "next/head";
+import Hoodie from "@/Components/hoodie"
 
 import "./globals.css";
+import hoodie from "@/Components/hoodie";
 
 export const metadata: Metadata = {
   title: "Various Plug",
@@ -17,16 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-white">
-      <Head>
-        <script
-          src="https://kit.fontawesome.com/fbadad80a0.js"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+<html lang="en" >
       <body>
         <Navbar />
-        <main className="overflow-hidden">{children}</main>
+          <main className="overflow-hidden">
+             {children}
+          </main>
         <Footer />
       </body>
     </html>
