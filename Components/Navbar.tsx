@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import rsz_1logoblack from '../public/rsz_1logoblack.png';
+import rsz_1logoblack from '@/public/rsz_1logoblack.png';
 import Image from "next/image";
 
 const Navbar = () => {
@@ -13,10 +13,9 @@ const Navbar = () => {
             </Link>
           </div>
       <div className="flex-1 py-4 font-bold align-middle ">
-
         <ul className="flex my-1 ">
           <li>
-            <Link href="/Components/hoodie" passHref className="px-4 hover:font-extrabold align-middle">
+            <Link href="/hoodie" passHref className="px-4 hover:font-extrabold align-middle">
               HOODDIE
             </Link>
           </li>
