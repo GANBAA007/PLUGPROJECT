@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className="flex my-1 ">
           <li>
             <Link href="/hoodie" passHref className="px-4 hover:font-extrabold align-middle">
-              HOODDIE
+              HOOsDIE
             </Link>
           </li>
           <li>
