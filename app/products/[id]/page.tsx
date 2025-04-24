@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+export const dynamic = 'force-dynamic';
 
 type Product = {
     ID: number;
@@ -14,14 +15,14 @@ type Product = {
 
 async function getProduct(id: string): Promise<Product> {
     const res = await fetch(`http://localhost:8080/ecomm/getproducts/${id}`, {
-        cache: 'no-store', // make sure it's fresh on every request
-    });
-
-    if (!res.ok) {
+        cache: 'no-store',
+      });
+    
+      if (!res.ok) {
         throw new Error('Failed to fetch product');
-    }
-
-    return res.json();
+      }
+    
+      return res.json();
 }
 
 
