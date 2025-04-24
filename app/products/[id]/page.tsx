@@ -27,6 +27,7 @@ async function getProduct(id: string): Promise<Product> {
 
 export default async function ProductPage({ params }: { params: { id: string } }) {
     const product = await getProduct(params.id);
+    const sizes =["S", "M", "L", "XL"]
 
     return (
         <div className="max-w-4xl  flex mx-auto">
@@ -35,10 +36,23 @@ export default async function ProductPage({ params }: { params: { id: string } }
             </div>
             <div className="ml-4">
                 <h1 className="text-3xl font-bold mt-6">{product.Name}</h1>
+                <p className="mt-1 text-gray-700">{product.Description}</p>
                 <p className="text-xl text-black mt-2">${product.Price.toFixed(2)}</p>
                 <div>
                 <p className="mt-2 text-sm text-gray-500">In stock: YES</p></div>
-                <p className="mt-4 text-gray-700">{product.Description}</p>
+                <div className="mt-4">
+                    <p className="text-sm font-semibold mb-2">Choose Size:</p>
+                    <select
+                        name="size"
+                        className="form-select border bg-white  p-2  w-full"
+                    >
+                        {sizes.map((size) => (
+                            <option key={size} value={size}>
+                                {size}
+                            </option>
+                        ))}
+                    </select>
+                </div>
                 <button className="border px-5 my-2">Add to Cart</button></div>
         </div>
     );
