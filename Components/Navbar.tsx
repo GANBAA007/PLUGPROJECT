@@ -12,29 +12,29 @@ const Navbar = () => {
             <Image src={rsz_1logoblack} alt="logo" />
             </Link>
           </div>
-      <div className="flex-1 py-4 font-bold align-middle ">
+      <div className="flex-1 py-4 font-semibold align-middle ">
         <ul className="flex my-1 ">
           <li>
-            <Link href="/hoodie" passHref className="px-4 hover:font-extrabold align-middle">
-              HOOsDIE
+            <Link href="/hoodie" passHref className="px-4 hover:font-bold align-middle">
+              HOODIE
             </Link>
           </li>
           <li>
-            <Link href="/tees" className="px-4 py-auto hover:font-extrabold align-middle">
+            <Link href="/tees" className="px-4 py-auto hover:font-bold align-middle">
               TEES
             </Link>
           </li>
           <li>
-            <Link href="/bags" className="px-4 hover:font-extrabold align-middle">
+            <Link href="/bags" className="px-4 hover:font-bold align-middle">
               BAGS
             </Link>
           </li>
         </ul>
       </div>
       <div className="py-4">
-        <ul className="flex justify-end font-bold my-1">
+        <ul className="flex justify-end font-semibold my-1">
           <li>
-            <Link href="/bags" className="px-4 hover:font-extrabold align-middle">
+            <Link href="/bags" className="px-4 hover:font-bold align-middle">
               CART
             </Link>
           </li>

@@ -9,8 +9,7 @@ const Footer = () => {
         <div className="hover:font-semibold">
           <Link href="/home">Newsletter</Link>
         </div>
-        <div className="
-         text-stone-400">Various Plug</div>
+        <div className="text-stone-400">Various Plug</div>
       </div>
     </div>
   );
